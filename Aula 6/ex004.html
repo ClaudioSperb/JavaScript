@@ -17,12 +17,13 @@
     <script>
         var nome = window.prompt('Qual é o seu nome ?')
         document.write(`Olá <strong>${nome}</strong>! Seu nome tem ${nome.length} letras!<br>`)
-
+        var profissão = window.prompt(`Qual sua profissão?`)
         /* Aqui colocamos o .length para ele fazer a leitura do string e responder  usando o documente.write , na tela quantas letras possui o nome digitado no prompt
         */
        document.write(`Seu nome em Maiúsculas é ${nome.toUpperCase()}<br>`)// A utilização do toUpperCase() é obrigatório terminar com ().
        document.write(`Seu nome em minúsculo, fica ${nome.toLowerCase()}<br>`)
        // A utilização do toLowerCase() é obrigatório terminar com ().
+       document.writeln(`Muito legal, a profissão ${profissão} é muito legal, seja bem vindo a nossa Página!!`)
     </script>
 </body>
 </html>
