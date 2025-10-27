@@ -10,7 +10,7 @@
         }
 
         body{
-            background-color: rgb(22, 22, 73);
+            background-image: linear-gradient(to right, rgb(0, 0, 32), rgb(76, 76, 202));
             color: white;
         }
 
@@ -27,9 +27,23 @@
     <h1>Iniciando os estudos com o DOM</h1>
     <p>Aqui vai o Resultado</p>
     <p>Apredendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
 
     <script>
+        // var d = window.document.getElementsByName('msg')[0]
+        var corpo = window.document.body
+        // var p1 = window.document.getElementsByTagName('p')[1]
+        // p1.style.color = 'black'
+        // document.write(p1.innerHTML)
+        // d.style.background = 'red'
+        // d.innerText = 'Estou aguardando...'
+        
+        var d = window.document.querySelector('div#msg')
+        d.innerHTML = 'Ola, Mundo !!!'
+        d.style.background = 'green'
+
+        var h1 = window.document.querySelector('h1')
+        h1.style.color = 'red'
 
     </script>
 </body>
