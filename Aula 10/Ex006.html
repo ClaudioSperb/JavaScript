@@ -44,15 +44,19 @@
 </head>
 <body>
     <div id="botao" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
-        Clique Aqui !
+        Interaja!!
     </div>
     <!-- Ao invés de utilizar os eventos direto do HTML, colocamos o addEventListener, para que fique somente no JavaScript e assim deixarmos o nosso HTML mais limpo!! -->
     <script>
         var a = window.document.getElementById('botao')
         // Coloquei o var a em cima, para que possamos utila-la em todas as funções.
+
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
+
+        //Essas 3 linhas a cima, resume os eventos que foram acrescentados na div.
+
         function clicar(){
             a.innerText = 'Clicou!!'
             a.style.background = 'darkblue'
