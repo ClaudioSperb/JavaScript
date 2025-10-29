@@ -21,7 +21,7 @@
             box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.486);
             font-size: 1.2em;
         }
-
+        
         div#res{
             margin-top: 25px;
             font-size: 1.4em;
@@ -46,8 +46,8 @@
             var tn1 = window.document.getElementById('txtn1')
             var tn2 = window.document.querySelector('input#txtn2')
             var res = window.document.getElementById('res')
-            var n1 = Number(tn1.value)
-            var n2 = Number(tn2.value)
+            var n2 = Number(tn2.value) //nesse caso não utilizamos as aspas simples
+            var n1 = Number(tn1.value) //nesse caso não utilizamos as aspas simples
             var s = n1 + n2
             res.innerHTML = `A soma entre ${n1} e ${n2} é <strong>${s}</strong>`
         }
