@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+</head>
+<body>
+    <h1>Qual sua Localidade?</h1>
+    <label for="ipais">Em qual país você mora?</label>
+    <input type="text" name="ipais" id="ipais">
+    <input type="button" value="Enviar" onclick="clicar()">
+    <div id="res">Então:</div>
+
+    <script>
+        function clicar() {
+            var pais = document.getElementById('ipais').value
+            var res = document.getElementById('res')
+
+            if (pais.toLowerCase() === 'brasil') {
+                res.innerHTML = `Você mora no ${pais}. Você é <strong>brasileiro</strong>! 🇧🇷`
+            } else {
+                res.innerHTML = `Você mora no ${pais}. Você é <strong>estrangeiro</strong>! 🌍`
+            }
+        }
+    </script>
+</body>
+</html>
