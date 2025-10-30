@@ -19,13 +19,15 @@ function clicar() {
     var h = Number(hora.value); // converte para número
 
 
-    if (h >= 5 && h < 12) {
+    if (h > 5 && h < 12) {
         r.innerHTML = `Bom dia! São ${h} horas.`;
-    } else if (h >= 12 && h < 18) {
+    } else if (h > 12 && h < 18) {
         r.innerHTML = `Boa tarde! São ${h} horas.`;
-    } else {
+    } else if(h > 18 && h < 24) {
         r.innerHTML = `Boa noite! São ${h} horas.`;
-    }
+    }else if(h < 5 ){
+        r.innerHTML = `Boa madrugada! São ${h} horas`;
+    } 
 }
 </script>
 </body>
