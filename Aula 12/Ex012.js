@@ -1,5 +1,6 @@
 
-var hora = 10
+var hora = 23
+console.log('Vamos ver que horas são ? Digite a hora e veja o que acontece')
 if(hora < 5 && hora < 24){ // Se a hora for menor que 5 e menor 24, será madrugada
     console.log(`Olá, boa madrugada - são ${hora} horas da madrugada !!!`)
 }else if(hora < 12){ // senao, se a hora for menor que as 12, sera bom dia
@@ -9,3 +10,4 @@ if(hora < 5 && hora < 24){ // Se a hora for menor que 5 e menor 24, será madrug
 }else{ // Se não , será boa noite
     console.log(`Olá,Boa noite - são ${hora} horas da Noite !!!`)
 }
+console.log('Obrigado por participar !!!!')
