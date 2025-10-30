@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Que horas são ?</title>
+    <title>Que horas são?</title>
 </head>
 <body>
-    <h1>Me diga que horas são ?</h1>
-    <label for="ihora">Coloque a Hora certa: </label>
-    <input type="time" name="hora" id="ihora">
-    <input type="button" value="Enviar">
-    <div id="hr">A hora exata é : </div>
+    <h1>Me diga que horas são?</h1>
+    <label for="ihora">Coloque a hora certa: </label>
+    <input type="text" name="hora" id="ihora" placeholder="Ex: 14">
+    <input type="button" value="Enviar" onclick="clicar()">
+    <div id="hr">A hora exata é: </div>
 
 <script>
+function clicar() {
+    var hora = document.getElementById('ihora');
+    var r = document.getElementById('hr');
+    var h = Number(hora.value); // converte para número
 
+
+    if (h >= 5 && h < 12) {
+        r.innerHTML = `Bom dia! São ${h} horas.`;
+    } else if (h >= 12 && h < 18) {
+        r.innerHTML = `Boa tarde! São ${h} horas.`;
+    } else {
+        r.innerHTML = `Boa noite! São ${h} horas.`;
+    }
+}
 </script>
 </body>
 </html>
