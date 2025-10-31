@@ -51,11 +51,10 @@
         var veiculo = document.getElementById('cat').value
         var cnh = document.getElementById('bot')
         var res = document.getElementById('res')
-         res.innerHTML+=`Ola, voce possui a CNH - `
          
-        if(veiculo ==='carro'){
-            res.innerHTML+='<strong>categoria B</strong>'
-        }else if(veiculo ==='moto'){
+        if(veiculo.toLowerCase() ==='carro'){
+            res.innerHTML+=`Legal, voce dirige um ${veiculo}, sua categoria é <strong>B</strong>`
+        }else if(veiculo.toLowerCase() ==='moto'){
             res.innerHTML+='<strong>Categoria A</strong>'
         }else if(veiculo.toLowerCase() ==='caminhão'){
             res.innerHTML+='<strong>Categoria C ou D</strong>'
