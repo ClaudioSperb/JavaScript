@@ -6,8 +6,7 @@
 
 body{
     background-image: linear-gradient(to right, #219ebc, #023047);
-    width: 97vw;
-    
+
 
 }
 
@@ -16,21 +15,20 @@ header{
     text-align: center;
 }
 
-#container{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+div{
+    text-align: center;
 }
 
 section{
-    background-image: linear-gradient(to right, #a1d2ce, #78cad2);
-    width: 500px;
+    background-color: white;
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px black;
-    height: 300px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.664);
+    width: 450px;
+    
+    margin: auto;
 }
+
 footer{
     color: white;
     text-align: center;
