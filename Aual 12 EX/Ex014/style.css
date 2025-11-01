@@ -6,7 +6,9 @@
 
 body{
     background-image: linear-gradient(to right, #219ebc, #023047);
- 
+    width: 97vw;
+    
+
 }
 
 header{
@@ -18,11 +20,10 @@ header{
     
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 section{
-
     background-image: linear-gradient(to right, #a1d2ce, #78cad2);
     width: 500px;
     padding: 15px;
