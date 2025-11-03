@@ -16,20 +16,23 @@ header{
     text-align: center;
 }
 
-#container{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 section{
+    display: block;
+    margin: auto;
+
     background-image: linear-gradient(to right, #a1d2ce, #78cad2);
     width: 500px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px black;
     
+}
+
+input#botao{
+    padding: 5px;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
 }
 
 footer{
