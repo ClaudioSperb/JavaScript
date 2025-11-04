@@ -12,8 +12,9 @@
     </header>  
         <section>
             <div>
-                <p>Ano de Nascimento:
-                    <input type="number" name="txtano" id="txtano" min="0">
+                <p>
+                    <label for="txtano">Ano de Nascimento: <label>
+                    <input type="number" name="txtano" id="txtano" min="0" placeholder="--Digite um ano--">
                 </p>
                 <p>
                     Sexo:
@@ -22,7 +23,7 @@
                     <input type="radio" name="radsex" id="fem" value="Feminino">
                     <label for="fem">Feminino</label>
                 </p>
-                <p><input id="botao" type="button" value="Verificar"></p>
+                <p><input id="botao" type="button" value="Verificar" onclick="verificar()"></p>
             </div>
             <div id="res">
                 Preencha os dados acima para ver o Resultado!

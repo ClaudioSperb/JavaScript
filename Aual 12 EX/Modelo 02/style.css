@@ -8,7 +8,6 @@ body{
     background-image: linear-gradient(to right, #219ebc, #023047);
     width: 97vw;
     
-
 }
 
 header{
@@ -21,7 +20,7 @@ section{
     display: block;
     margin: auto;
 
-    background-image: linear-gradient(to right, #a1d2ce, #78cad2);
+    background-image: linear-gradient(to right, #a1d2ce3b, #78cbd241);
     width: 500px;
     padding: 15px;
     border-radius: 10px;
@@ -30,10 +29,35 @@ section{
 }
 
 input#botao{
-    padding: 5px;
+    padding: 10px;
     box-shadow: 1px 1px 5px black;
     cursor: pointer;
+    border-radius: 5px;
 }
+
+input#botao:hover{
+    transition: 0.3s;
+    background-color: #023047;
+    color: white;
+    
+}
+
+input{
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.692);
+    border: 1px solid black;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 5px 5px 15px black;
+}
+
 
 footer{
     color: white;
