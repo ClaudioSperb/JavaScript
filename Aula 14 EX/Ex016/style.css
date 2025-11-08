@@ -26,9 +26,13 @@ section{
     background-image: linear-gradient(to right, #a1d2ce, #78cad2);
     width: 500px;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 20px 0px 20px 0px;
     box-shadow: 2px 2px 8px black;
     height: auto;
+    
+}
+h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.589);
 }
 
 input{
