@@ -3,15 +3,16 @@ function contar(){
     let fim = document.getElementById('txtf')//fim
     let passo = document.getElementById('txtp')//passo
     let res = document.getElementById('res')//resultados
+    let i = Number(ini.value)//converter para número
+    let f = Number(fim.value)//converter para número
+    let p = Number(passo.value)//converter para número
+
 
     if(ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){//verificar se os campos estão vazios
         res.innerHTML = 'Impossível contar!'
         alert('[ERRO] Faltam dados!')
     } else {
         res.innerHTML = 'Contando: <br>'
-        let i = Number(ini.value)//converter para número
-        let f = Number(fim.value)//converter para número
-        let p = Number(passo.value)//converter para número
 
         if(i < f){
             for(let c = i; c <= f; c += p){
