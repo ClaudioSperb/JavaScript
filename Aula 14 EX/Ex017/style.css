@@ -23,8 +23,6 @@ header{
     text-align: center;
 }
 
-
-
 section{
     background-image: linear-gradient(to right, #a1d2ce, #78cad2);
     width: 500px;
@@ -32,6 +30,31 @@ section{
     border-radius: 10px;
     box-shadow: 2px 2px 8px black;
     height: 300px;
+}
+
+#btn{
+    width: 100px;
+    height: 30px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.705);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#btn:hover{
+    background-color: #219ebc;
+    color: white;
+    cursor: pointer;
+    translate: 0px -2px;
+    transition-duration: 0.3s;
+}
+
+select{
+    width: 150px;
+    text-align: center;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+    padding: 5px;
 }
 footer{
     color: white;
