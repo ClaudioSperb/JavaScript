@@ -10,6 +10,7 @@ function tabuada(){
         for(c = 1; c < 11; c++){
             let item = document.createElement('option') //criar um elemento option
             item.text = ` ${n} x ${c} =  ${n*c}` //adicionar o texto ao elemento option
+            item.value = `tab${c}` //adicionar um valor ao elemento option
             tab.appendChild(item) //adicionar o elemento option ao select
         }
        
