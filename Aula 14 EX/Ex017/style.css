@@ -50,11 +50,12 @@ section{
 }
 
 select{
-    width: 150px;
+    width: auto;
     text-align: center;
     box-shadow: 1px 1px 10px black;
     border-radius: 5px;
     padding: 5px;
+    overflow: hidden;
 }
 footer{
     color: white;
