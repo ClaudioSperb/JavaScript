@@ -1,8 +1,6 @@
 function tabuada(){
     let num = document.getElementById('txtn') //pegar o valor digitado
     let tab = document.getElementById('seltab') //pegar a tabuada onde os resultados serão exibidos
-    let n = Number(num.value) //converter o valor digitado em numero
-
     if(num.value.length == 0){
         window.alert('Por favor, digite um número válido para começarmos!')
     }else{
