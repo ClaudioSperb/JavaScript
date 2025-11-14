@@ -9,7 +9,7 @@ function tabuada(){
         tab.innerHTML = ''   //limpar a tabuada antes de gerar uma nova
         for(c = 1; c < 11; c++){
             let item = document.createElement('option') //criar um elemento option
-            item.text = ` ${n} x ${c} =  ${n*c}` //adicionar o texto ao elemento option
+            item.text = ` ${n} x ${c} =  ${n*c}` //adicionar o texto ao elemento option, utilizamos entre crases sempre para inserir variaveis
             item.value = `tab${c}` //adicionar um valor ao elemento option
             tab.appendChild(item) //adicionar o elemento option ao select
         }
